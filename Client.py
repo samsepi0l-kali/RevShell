@@ -2,8 +2,8 @@ import sys
 import socket
 import subprocess
 
-serv_add = '4.tcp.eu.ngrok.io'  #str(input("Enter Server Address: "))
-portnum = 14193                 #int(input("Enter Port Number: "))
+serv_add = str(input("Enter Server Address: "))
+portnum = int(input("Enter Port Number: "))
 
 s = socket.socket()
 s.connect((serv_add, portnum))
